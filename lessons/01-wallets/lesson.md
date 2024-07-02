@@ -67,10 +67,6 @@ By the end of this lesson, you will understand how wallets work in `=nil;` and b
    ./nil_cli wallet top-up AMOUNT
    ```
 
-6. **Set Address in Hardhat:**
-
-   Set the wallet address in Hardhat configuration. Add the wallet address inside `.env` -> `WALLET_ADDR`.
-
 ### Creating a Custom Wallet
 
 Beyond the predefined wallet, you can implement your own custom wallet. Follow the template of the default wallet and adapt it as needed. Creating external wallets will be covered in a separate lesson, as we first need to understand other aspects of the protocol.

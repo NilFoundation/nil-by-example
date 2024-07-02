@@ -9,7 +9,7 @@ contract Incrementer is NilBase {
     event ValueChanged(uint256 newValue);
     receive() external payable {}
 
-    function increment() public onlyInternal {
+    function increment() public onlyInternal payable {
         value += 1;
         emit ValueChanged(value);
     }
