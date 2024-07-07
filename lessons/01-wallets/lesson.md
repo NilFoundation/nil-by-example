@@ -28,6 +28,12 @@ By the end of this lesson, you will understand how wallets work in `=nil;` and b
 
 ### Creating a Wallet via the =nil; CLI
 
+1. **Create a New Private Key:**
+
+   ```bash
+   nil_cli -c ./config.ini keygen new
+   ```
+
 1. **Create a New Wallet:**
 
    Use the following command to create a new wallet. This command deploys a default wallet, and you can see the contract code in `./assets/wallet.sol`:

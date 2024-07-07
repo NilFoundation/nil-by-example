@@ -19,7 +19,11 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+<<<<<<< Updated upstream
     "@nilfoundation/hardhat-plugin": "^0.1.3",
+=======
+    "@nilfoundation/hardhat-plugin": "^0.1.8",
+>>>>>>> Stashed changes
     "dotenv": "^16.4.5"
   }
 }
