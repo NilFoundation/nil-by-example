@@ -15,7 +15,7 @@ Learn how to work with smart contracts within a single execution shard.
 
 Each execution shard acts as a separate blockchain that starts from a genesis block and continues until a possible last block. Each execution shard has its own EVM, message pool, and state. Users can decide on which shard they want to use. When creating wallets using the CLI, we can specify the shard ID:
 ```bash
-./nil_cli wallet new --shard-id <shard num>
+nil_cli -c ./config.ini wallet new --shard-id <shard num>
 ```
 
 ### Smart Contracts
@@ -39,7 +39,7 @@ In the future, we plan to create a MetaMask snap as well as other tools based on
 
    Retrieve the contract code with the following command:
    ```bash
-   ./nil_cli contract code <contract address>
+   nil_cli -c ./config.ini contract code <contract address>
    ```
 
 3. **Interact with the Contract Using Hardhat:**
@@ -53,6 +53,6 @@ In the future, we plan to create a MetaMask snap as well as other tools based on
 
    Get the value from the contract with the following command:
    ```bash
-   ./nil_cli contract call-readonly <contract address> getValue --abi ./artifacts/Incrementer.abi
+   nil_cli -c ./config.ini contract call-readonly <contract address> getValue --abi ./artifacts/Incrementer.abi
    ```
 

@@ -23,40 +23,40 @@ The network also has a multi-currency mechanism. All accounts (smart contracts) 
 
    Creating a new currency is as simple as:
    ```bash
-   ./nil_cli minter create-currency <owner_contract address> 50000 <token_name> --withdraw
+   nil_cli -c ./config.ini minter create-currency <owner_contract address> 50000 <token_name> --withdraw
    ```
 
 2. **Check All Currencies from a Contract:**
 
    You can check all currencies from a contract using:
    ```bash
-   ./nil_cli contract currencies <owner-contract_address>
+   nil_cli -c ./config.ini contract currencies <owner-contract_address>
    ```
 
 3. **Check Wallet Balance:**
 
    To check the balance of the wallet, you can do:
    ```bash
-   ./nil_cli wallet balance
+   nil_cli -c ./config.ini wallet balance
    ```
 
 4. **Send Native Currency to Another Contract:**
 
    Sending native currency to another contract can be done with:
    ```bash
-   ./nil_cli wallet send-tokens <Destination contract address> 100
+   nil_cli -c ./config.ini wallet send-tokens <Destination contract address> 100
    ```
 
 5. **Check Balance (Change Wallet Address in Config):**
 
    ```bash
-   ./nil_cli wallet balance
+   nil_cli -c ./config.ini wallet balance
    ```
 
 6. **Send Non-Native Currency:**
 
    To send non-native currency, you can do:
    ```bash
-   ./nil_cli wallet send-tokens <Destination contract address> <native currency> --token <id>=value
+   nil_cli -c ./config.ini wallet send-tokens <Destination contract address> <native currency> --token <id>=value
    ```
 
