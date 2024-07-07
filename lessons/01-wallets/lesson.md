@@ -38,7 +38,7 @@ By the end of this lesson, you will understand how wallets work in `=nil;` and b
 
    Use the following command to create a new wallet. This command deploys a default wallet, and you can see the contract code in `./assets/wallet.sol`:
    ```bash
-   ./nil_cli wallet new
+   nil_cli -c ./config.ini wallet new
    ```
 
    Example response:
@@ -52,7 +52,7 @@ By the end of this lesson, you will understand how wallets work in `=nil;` and b
    To check what is deployed on a specific address, use the following command:
 
    ```bash
-   ./nil_cli contract code <contract address>
+   nil_cli -c ./config.ini contract code <contract address>
    ```
    
 3. **Add Wallet Address in CLI:**
@@ -63,14 +63,14 @@ By the end of this lesson, you will understand how wallets work in `=nil;` and b
 
    To check the balance of your wallet, use the following command:
    ```bash
-   ./nil_cli wallet balance
+   nil_cli -c ./config.ini wallet balance
    ```
 
 5. **Top Up Wallet:**
 
    To top up your wallet with a specific amount, use the following command:
    ```bash
-   ./nil_cli wallet top-up AMOUNT
+   nil_cli -c ./config.ini wallet top-up AMOUNT
    ```
 
 ### Creating a Custom Wallet
