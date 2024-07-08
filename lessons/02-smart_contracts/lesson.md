@@ -1,4 +1,4 @@
-# Lesson 03: Smart Contracts
+# Lesson 02: Smart Contracts
 
 ## Goal
 
@@ -55,4 +55,3 @@ In the future, we plan to create a MetaMask snap as well as other tools based on
    ```bash
    nil_cli -c ./config.ini contract call-readonly <contract address> getValue --abi ./artifacts/Incrementer.abi
    ```
-

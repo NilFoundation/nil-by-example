@@ -1,4 +1,4 @@
-# Lesson 02: Messages
+# Lesson 05: Messages
 
 ## Goal
 
@@ -79,8 +79,8 @@ The contract receiving an external message must implement an additional function
 
 ```solidity
 function verifyExternal(
-        uint256 messageHash, 
-        bytes calldata authData 
+        uint256 messageHash,
+        bytes calldata authData
     ) external view returns (bool)
 ```
 

@@ -1,4 +1,4 @@
-# Lesson 04: Cross-Shard Communication
+# Lesson 03: Cross-Shard Communication
 
 ## Goal
 
@@ -42,7 +42,7 @@ This function is used for sending cross-shard messages.
 
    Once added, we can deploy the contract as usual:
    ```bash
-   npx hardhat ignition deploy ./ignition/modules/Caller.ts --network nil  
+   npx hardhat ignition deploy ./ignition/modules/Caller.ts --network nil
    ```
    We should return shardId to default:
    ```bash
@@ -54,7 +54,7 @@ This function is used for sending cross-shard messages.
 
    To verify that the contract is deployed, we can check the contract code using the CLI:
    ```bash
-   nil_cli -c ./config.ini contract code <caller address> 
+   nil_cli -c ./config.ini contract code <caller address>
    ```
 
 3. **Trigger the Call Method from the Caller Contract**
@@ -70,4 +70,3 @@ This function is used for sending cross-shard messages.
    ```bash
    nil_cli -c ./config.ini contract call-readonly <Incrementer address> getValue --abi ./Incrementer.abi
    ```
-
