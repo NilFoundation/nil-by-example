@@ -43,7 +43,7 @@ To deploy and interact with the Incrementer contract, use the following commands
 npx hardhat ignition deploy ./ignition/modules/Incrementer.ts --network nil_cluster
 
 # Interact with the contract
-npx hardhat increment --network nil_cluster --contract <Contract Address>
+npx hardhat increment --network nil --contract <Contract Address>
 ```
 
 ## 💪 Contributing
