@@ -1,4 +1,4 @@
-# Lesson 05: Multi-Currency
+# Lesson 04: Multi-Currency
 
 ## Goal
 
@@ -59,4 +59,3 @@ The network also has a multi-currency mechanism. All accounts (smart contracts) 
    ```bash
    nil_cli -c ./config.ini wallet send-tokens <Destination contract address> <native currency> --token <id>=value
    ```
-
