@@ -22,7 +22,7 @@ By the end of this lesson, you will understand how wallets work in `=nil;` and b
 ### Practical Implications:
 **Default Wallets:** =nil; provides pre-built wallets with essential functionalities out of the box. These are ready to use and include predefined constructor bytecode.
 
-**Custom Wallets:** Developers can create their own smart contract wallets, defining the logic and operations they need. This can include anything from basic transaction management to sophisticated financial instruments.
+**Custom Wallets:** Developers can create their own smart contract wallets, defining the logic and operations they need. This can include anything from basic transaction management to sophisticated financial instruments. Developers can also create custom wallets to have special features and functions that aren't available in "Default Wallets".
 
 ## Let's Try It Out
 
