@@ -55,7 +55,7 @@ In the future, we plan to create a MetaMask snap as well as other tools based on
    npx hardhat increment --network nil --contract <Contract Address>
    ```
 
-5. **Get Value from Contract Using CLI:**
+4. **Get Value from Contract Using CLI:**
 
    Get the value from the contract with the following command:
    > Make sure you change your directory to `/cli/` and run the command.
