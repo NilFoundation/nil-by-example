@@ -31,6 +31,8 @@ In the future, we plan to create a MetaMask snap as well as other tools based on
 1. **Deploy the Contract Using Hardhat:**
 
    Deploy the contract with the following command:
+   > Make sure you change your directory to `/hardhat/` and run the command.
+   
    ```bash
    npx hardhat ignition deploy ./ignition/modules/Incrementer.ts --network nil
    ```
@@ -38,6 +40,8 @@ In the future, we plan to create a MetaMask snap as well as other tools based on
 2. **Get the Contract Code Using CLI:**
 
    Retrieve the contract code with the following command:
+   > Make sure you run the command from the root directory where the `config.ini` file is located.
+
    ```bash
    nil_cli -c ./config.ini contract code <contract address>
    ```
@@ -45,13 +49,17 @@ In the future, we plan to create a MetaMask snap as well as other tools based on
 3. **Interact with the Contract Using Hardhat:**
 
    Interact with the deployed contract:
+   > Make sure you change your directory to `/hardhat/` and run the command.
+   
    ```bash
    npx hardhat increment --network nil --contract <Contract Address>
    ```
 
-4. **Get Value from Contract Using CLI:**
+5. **Get Value from Contract Using CLI:**
 
    Get the value from the contract with the following command:
+   > Make sure you change your directory to `/cli/` and run the command.
+   
    ```bash
    nil_cli -c ./config.ini contract call-readonly <contract address> getValue --abi ./artifacts/Incrementer.abi
    ```
