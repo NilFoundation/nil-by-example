@@ -1,30 +1,22 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-import "./Nil.sol";
+import "./nil/Nil.sol";
 
-contract Caller{
+contract Caller {
     using Nil for address;
 
-    receive() external payable {}
-
-    function call(address dst) public payable{
+    function call(address dst) public {
         Nil.asyncCall(
             dst,
             msg.sender,
             msg.sender,
             100000,
+            0,
             false,
             100000 * 10,
             abi.encodeWithSignature("increment()")
         );
-    }
-
-    function verifyExternal(
-        uint256,
-        bytes calldata
-    ) external pure returns (bool) {
-        return true;
     }
 }
 
