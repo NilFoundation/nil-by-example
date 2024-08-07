@@ -57,7 +57,7 @@ By the end of this lesson, you will understand how wallets work in `=nil;` and b
    
 3. **Add Wallet Address in CLI:**
 
-   Add the wallet address inside `config.yaml` -> `address`. This address will be used whenever you interact with the `nil_cli` wallet.
+   Add the wallet address inside `config.ini` -> `address`. This address will be used whenever you interact with the `nil_cli` wallet.
 
 4. **Check Wallet Balance:**
 
