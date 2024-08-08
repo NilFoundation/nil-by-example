@@ -23,6 +23,7 @@ const config: NilHardhatUserConfig = {
   },
   walletAddress: process.env.WALLET_ADDR,
   debug:true,
+  shardId: 1,
 };
 export default config;
 
