@@ -31,14 +31,14 @@ By the end of this lesson, you will understand how wallets work in `=nil;` and b
 1. **Create a New Private Key:**
 
    ```bash
-   nil_cli -c ./config.ini keygen new
+   nil -c ./config.ini keygen new
    ```
 
 1. **Create a New Wallet:**
 
    Use the following command to create a new wallet. This command deploys a default wallet, and you can see the contract code in `./assets/wallet.sol`:
    ```bash
-   nil_cli -c ./config.ini wallet new
+   nil -c ./config.ini wallet new
    ```
 
    Example response:
@@ -52,25 +52,25 @@ By the end of this lesson, you will understand how wallets work in `=nil;` and b
    To check what is deployed on a specific address, use the following command:
 
    ```bash
-   nil_cli -c ./config.ini contract code <contract address>
+   nil -c ./config.ini contract code <contract address>
    ```
    
 3. **Add Wallet Address in CLI:**
 
-   Add the wallet address inside `config.ini` -> `address`. This address will be used whenever you interact with the `nil_cli` wallet.
+   Add the wallet address inside `config.ini` -> `address`. This address will be used whenever you interact with the `nil` wallet.
 
 4. **Check Wallet Balance:**
 
    To check the balance of your wallet, use the following command:
    ```bash
-   nil_cli -c ./config.ini wallet balance
+   nil -c ./config.ini wallet balance
    ```
 
 5. **Top Up Wallet:**
 
    To top up your wallet with a specific amount, use the following command:
    ```bash
-   nil_cli -c ./config.ini wallet top-up AMOUNT
+   nil -c ./config.ini wallet top-up AMOUNT
    ```
 
 ### Creating a Custom Wallet

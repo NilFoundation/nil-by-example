@@ -54,7 +54,7 @@ This function is used for sending cross-shard messages.
 
    To verify that the contract is deployed, we can check the contract code using the CLI:
    ```bash
-   nil_cli -c ./config.ini contract code <caller address>
+   nil -c ./config.ini contract code <caller address>
    ```
 
 3. **Trigger the Call Method from the Caller Contract**
@@ -68,5 +68,5 @@ This function is used for sending cross-shard messages.
 
    To ensure that the `Incrementer` contract was incremented, we can fetch the value using the CLI:
    ```bash
-   nil_cli -c ./config.ini contract call-readonly <Incrementer address> getValue --abi ./Incrementer.abi
+   nil -c ./config.ini contract call-readonly <Incrementer address> getValue --abi ./Incrementer.abi
    ```
